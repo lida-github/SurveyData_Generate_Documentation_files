@@ -75,7 +75,7 @@ sjPlot::view_df(file,
 html.file <- readLines(paste0(files.dataset.dir,dataset.id.lida,"_Variables_",variables.file.version,".html"),-1)
 html.file[2] <- paste0("<caption><b>Dataset = Duomenų rinkinys</b>: ",dataset.citation,"<br/><br/><b>Data file = Duomenų failas</b>: ",dataset.id.lida,"_Data_",data.file.version,".sav</caption>")
 writeLines(html.file,paste0(files.dataset.dir,dataset.id.lida,"_Variables_",variables.file.version,".html"))
-writeLines(html.file,paste0(files.dataset.dir,dataset.id.lida,"_Variables_",variables.file.version,".xlsx"))
+writeLines(html.file,paste0(files.dataset.dir,dataset.id.lida,"_Variables_",variables.file.version,".xlsx")) # Open with LibreOffice Calc and save as *.tsv
 
 # Generate documentation files ----
 
